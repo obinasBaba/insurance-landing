@@ -16,12 +16,13 @@ export default {
 <style lang="scss">
 @use "styles/global-style";
 
-#app {
 
   .app-container {
-
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    color: white;
   }
 
-}
 
 </style>

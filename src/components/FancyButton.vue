@@ -15,11 +15,15 @@ export default {
   border-radius: 5000px;
   background-color: styl.$clrs-accent;
   border: none;
-  color: white;
   font-family: styl.$fonts-auger;
   text-transform: capitalize;
 
-  @include styl.padding(hor, 2rem);
-  @include styl.padding(ver, 1rem);
+  font-weight: bold;
+  color: darken(#29C1FF, 30%);
+
+
+
+  @include styl.padding(hor, 1rem);
+  @include styl.padding(ver, .5rem);
 }
 </style>
