@@ -10,6 +10,10 @@
   @return $number;
 }
 
+@function fluid-unit($amount){
+  @return calc(#{$amount} * var(--coef-indent));
+}
+
 @function single-unit-rem($value, $font-size-base) {
   @if (extract-unit($value) != 1px) {
     @return $value;

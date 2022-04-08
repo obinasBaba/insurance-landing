@@ -35,6 +35,7 @@ export default {
 
 nav {
   position: fixed;
+  z-index: 10;
   top: 1vmax;
   left: 0;
   right: 0;

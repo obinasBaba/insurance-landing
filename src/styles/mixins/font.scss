@@ -1,3 +1,5 @@
+@use "../functions/functions" as *;
+
 @mixin font($name, $path, $weight: 400, $style: normal, $display: 'block') {
   @font-face {
     font-family: $name;
@@ -15,6 +17,10 @@
 
 @mixin font-size-text($size) {
   font-size: calc(#{$size} * var(--coef-text));
+}
+
+@mixin fluid-props($props, $amount) {
+  #{$props}: #{fluid-unit($amount)};
 }
 
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
